@@ -56,7 +56,7 @@ class _AlbumsPageState extends State<AlbumsPage> {
                     child: Padding(
                       padding: EdgeInsets.symmetric(vertical: 6, horizontal: 5),
                       child: Card(
-                        color: Colors.grey.shade300,
+                        color: Colors.purple.shade100,
                         elevation: 10,
                         shadowColor: Colors.black,
                         child: Row(

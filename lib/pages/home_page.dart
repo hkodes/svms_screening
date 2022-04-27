@@ -5,6 +5,7 @@ import 'package:focused_menu/focused_menu.dart';
 import 'package:focused_menu/modals.dart';
 import 'package:svms_screening/pages/albums_page.dart';
 import 'package:svms_screening/pages/post_page.dart';
+import 'package:svms_screening/pages/todos_page.dart';
 import 'package:svms_screening/services/db.dart';
 
 import '../models/user.dart';
@@ -75,7 +76,7 @@ class _HomepageState extends State<Homepage> {
                                       )));
                             }),
                         FocusedMenuItem(
-                            backgroundColor: Colors.grey.shade400,
+                            backgroundColor: Colors.purple.shade100,
                             title: const Text('Albums',
                                 style: TextStyle(
                                     fontWeight: FontWeight.w500, fontSize: 16)),
@@ -96,16 +97,16 @@ class _HomepageState extends State<Homepage> {
                           ),
                           trailingIcon: const Icon(Icons.arrow_forward_ios,
                               color: Colors.black, size: 15),
-                          onPressed: () async {
-                            SystemChannels.platform
-                                .invokeMethod('SystemNavigator.pop');
+                          onPressed: () {
+                            Navigator.of(context).push(CupertinoPageRoute(
+                                builder: (context) => TodosPage(user: user)));
                           },
                         ),
                       ],
                       child: Container(
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20),
-                            color: Colors.grey.shade300),
+                            color: Colors.purple.shade100),
                         margin: EdgeInsets.all(10),
                         padding: EdgeInsets.all(10),
                         child: Column(

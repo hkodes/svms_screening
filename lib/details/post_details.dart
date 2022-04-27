@@ -47,7 +47,7 @@ class _PostDetailsState extends State<PostDetails> {
               child: Material(
                   borderRadius: BorderRadius.circular(16),
                   elevation: 10,
-                  color: Colors.white,
+                  color: Colors.purple.shade100,
                   child: Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Column(
@@ -72,7 +72,6 @@ class _PostDetailsState extends State<PostDetails> {
                             ),
                             Expanded(
                               child: Container(
-                                color: Colors.white,
                                 child: Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,

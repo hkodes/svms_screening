@@ -57,7 +57,7 @@ class _PostsPageState extends State<PostsPage> {
                                   )));
                         },
                         child: Card(
-                          color: Colors.grey.shade300,
+                          color: Colors.purple.shade100,
                           elevation: 10,
                           shadowColor: Colors.black,
                           child: Row(
