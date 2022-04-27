@@ -11,9 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Simplify VMS Screening',
-      theme: ThemeData(
-        primarySwatch: Colors.purple,
-      ),
+      theme: ThemeData(primarySwatch: Colors.grey),
       home: Homepage(),
     );
   }
